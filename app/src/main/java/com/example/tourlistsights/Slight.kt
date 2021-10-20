@@ -8,4 +8,5 @@ class Slight (
     val imageName: String,
     val descripttion: String,
     val kind: String
-)
+
+    )
