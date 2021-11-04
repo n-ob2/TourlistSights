@@ -3,6 +3,8 @@ package com.example.tourlistsights
 import android.content.res.Resources
 import android.net.wifi.aware.AwareResources
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonConfiguration
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
