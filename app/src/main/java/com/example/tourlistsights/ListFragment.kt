@@ -45,6 +45,11 @@ class ListFragment : Fragment() {
                                 putInt(ROW_POSITION, position)  //アーギュメンツにタップされた番号を渡して
                             }
                              manager.beginTransaction().apply{
+                                 setCustomAnimations(   //画面遷移時のアニメーション設定
+                                     android.R.anim.slide_in_left,  //表示される画面の動き
+                                     android.R.anim.slide_out_right,    //非表示になる画面の動き
+                                     android.R.anim.fade_in,    //戻るときに表示される画面の動き
+                                     android.R.anim.fade_out)   //戻るときに非表示になる画面の動き
                                 replace(R.id.content, fragment, tag)    //フラグメントを表示
                                 addToBackStack(null)
                             }.commit()
