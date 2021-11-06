@@ -12,7 +12,7 @@ import java.io.InputStreamReader
 class Sight (
     val name: String,
     val imageName: String,
-    val descripttion: String,
+    val description: String,
     val kind: String
     )
 

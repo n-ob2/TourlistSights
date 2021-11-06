@@ -23,11 +23,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerTitle"
-        android:layout_width="367dp"
-        android:layout_height="117dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/detail_title_bg"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="87dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="185dp">
 
         <TextView
             android:id="@+id/detailKind"

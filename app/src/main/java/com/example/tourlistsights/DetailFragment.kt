@@ -35,7 +35,7 @@ class DetailFragment : Fragment() {
         val sights = getSights(resources)   //データを配列で取得して格納
         binding.detailKind.text = sights[position].kind //position番目のデータを画面に表示
         binding.detailName.text = sights[position].name
-        binding.detailDescription.text = sights[position].descripttion
+        binding.detailDescription.text = sights[position].description
         var img =resources.getIdentifier(sights[position].imageName, "drawable", context?.packageName)
         binding.detailImage.setImageResource(img)
     }   //onViewCreated　↑↑
